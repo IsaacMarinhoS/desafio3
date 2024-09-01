@@ -1,0 +1,191 @@
+* {
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+body {
+   font-size:larger;
+}
+
+section{
+
+    margin: 15px;
+}
+
+
+h1 {
+    font-size: 300%;
+    display: contents; 
+
+}
+
+header {
+    background-color: #007BFF;
+    color: rgb(206, 198, 198);
+    padding: 50px 20px;
+
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    margin: 0%;
+   
+}
+
+
+nav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 320px) {
+    nav a {
+        width: 33%;
+        margin-right: 0;
+       
+    }
+
+    form button {
+        width: 1000%; 
+    }
+}
+
+
+/* Links na navegação ao passar o mouse */
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Container com padding */
+.container {
+    padding: 20px;
+}
+
+/* Imagem destacada com largura específica */
+.highlighted-image {
+    width: 31%;
+}
+
+/* Estilo para a seção de imagens com layout de grade */
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    align-content: center;
+}
+
+/* Estilo para as imagens dentro da grade */
+.imagens img {
+    border-radius: 1rem;    
+    width: 98%;
+    height: 98%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Estilo para o título */
+h2 {
+    color: #333;
+    margin: 20px;
+    margin-left: 0%;
+    margin-top: -3%;
+}
+
+/* Container do formulário */
+form {
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 7%;
+   
+}
+
+
+
+/* Estilo para os campos de input */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: calc(50% - 10px); 
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Campos em uma linha */
+form input[type="text"]:nth-child(odd) {
+    margin-right: 20px;
+}
+
+/* Campo de seleção dos workshops */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Checkbox alinhado */
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Radio button alinhado */
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Botão de envio */
+form button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 1020%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 500px) {
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+        width: 100%;
+        margin-right: 0;
+       
+    }
+
+    form button {
+        width: 1000%; 
+    }
+}
+
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Estilo geral para divs */
+div {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.contato{
+
+    margin-top: -1%;
+
+
+}
