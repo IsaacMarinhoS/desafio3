@@ -67,13 +67,7 @@ nav a:hover {
     padding: 20px;
 }
 
-/* Imagem destacada com largura específica */
-.highlighted-image {
-    width: 31%;
-}
-
-/* Estilo para a seção de imagens com layout de grade */
-.imagens {
+.imagem {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0px;
@@ -81,12 +75,18 @@ nav a:hover {
 }
 
 /* Estilo para as imagens dentro da grade */
-.imagens img {
+.imagem img {
     border-radius: 1rem;    
     width: 98%;
     height: 98%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    transition: transform 0.4s ease; /* Suavização da transição */
+}
+
+/* Efeito de hover nas imagens individuais */
+.imagem img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 10% */
 }
 
 /* Estilo para o título */
@@ -187,5 +187,9 @@ div {
 
     margin-top: -1%;
 
+
+}
+.cadastro {
+    font-size: larger;
 
 }
